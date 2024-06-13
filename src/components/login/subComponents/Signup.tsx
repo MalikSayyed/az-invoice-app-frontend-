@@ -43,7 +43,7 @@ const Signup: React.FC<SignupProps> = () => {
 
   const handleSignUp = async () => {
     try {
-      await axios.post("https://d2nxa7pir92htg.cloudfront.net/auth/register", {
+      await axios.post("https://dnznqi8n78t2t.cloudfront.net/auth/register", {
         username,
         email,
         password,

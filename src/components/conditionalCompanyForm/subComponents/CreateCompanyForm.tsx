@@ -20,7 +20,7 @@ const CreateCompanyForm: React.FC<CreateCompanyFormProps> = () => {
   const handleCreateCompany = async () => {
     try {
       await axios.post(
-        "https://d2nxa7pir92htg.cloudfront.net/company/create-company",
+        "https://dnznqi8n78t2t.cloudfront.net/company/create-company",
         {
           token: sessionStorage.getItem("loginToken"),
           name: companyName,

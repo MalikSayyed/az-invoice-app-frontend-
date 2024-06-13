@@ -31,7 +31,7 @@ const ResetPassword: React.FC = () => {
       e.preventDefault();
 
       await axios.post(
-        "https://d2nxa7pir92htg.cloudfront.net/auth/reset-password",
+        "https://dnznqi8n78t2t.cloudfront.net/auth/reset-password",
         {
           newPassword: password,
           otp: resetOtp,

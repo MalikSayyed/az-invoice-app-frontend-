@@ -35,7 +35,7 @@ export function handleFileImportChange(
             };
 
             await axios.post(
-              "https://d2nxa7pir92htg.cloudfront.net/company/import-company",
+              "https://dnznqi8n78t2t.cloudfront.net/company/import-company",
               {
                 token: sessionStorage.getItem("loginToken"),
                 input,
@@ -57,7 +57,7 @@ export function handleFileImportChange(
             };
 
             await axios.post(
-              "https://d2nxa7pir92htg.cloudfront.net/customer/import-customer",
+              "https://dnznqi8n78t2t.cloudfront.net/customer/import-customer",
               {
                 token: sessionStorage.getItem("loginToken"),
                 input,
@@ -78,7 +78,7 @@ export function handleFileImportChange(
             };
 
             await axios.post(
-              "https://d2nxa7pir92htg.cloudfront.net/item/import-item",
+              "https://dnznqi8n78t2t.cloudfront.net/item/import-item",
               {
                 token: sessionStorage.getItem("loginToken"),
                 input,
@@ -102,7 +102,7 @@ export function handleFileImportChange(
               itemName: contentitem.itemName,
             };
             await axios.post(
-              "https://d2nxa7pir92htg.cloudfront.net/invoice/import-invoice",
+              "https://dnznqi8n78t2t.cloudfront.net/invoice/import-invoice",
               {
                 token: sessionStorage.getItem("loginToken"),
                 input,

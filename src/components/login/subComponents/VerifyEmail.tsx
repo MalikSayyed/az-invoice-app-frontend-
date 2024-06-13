@@ -23,7 +23,7 @@ const VerifyEmail: React.FC = () => {
     try {
       e.preventDefault();
       const response = await axios.post(
-        "https://d2nxa7pir92htg.cloudfront.net/auth/verify-email",
+        "https://dnznqi8n78t2t.cloudfront.net/auth/verify-email",
         {
           otp: verifyOtp,
         }

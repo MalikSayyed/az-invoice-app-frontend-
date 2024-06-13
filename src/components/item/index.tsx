@@ -69,7 +69,7 @@ const Item: React.FC = () => {
 
   const fetchItemsData = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/item/get-items",
+      "https://dnznqi8n78t2t.cloudfront.net/item/get-items",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -186,7 +186,7 @@ const Item: React.FC = () => {
   const handleAddItemClick = async () => {
     try {
       const response = await axios.post(
-        "https://d2nxa7pir92htg.cloudfront.net/item/add-item",
+        "https://dnznqi8n78t2t.cloudfront.net/item/add-item",
         {
           token: sessionStorage.getItem("loginToken"),
           item_name: itemName,
@@ -227,7 +227,7 @@ const Item: React.FC = () => {
   const handleEditItemClick = async () => {
     try {
       await axios.put(
-        "https://d2nxa7pir92htg.cloudfront.net/item/update-item",
+        "https://dnznqi8n78t2t.cloudfront.net/item/update-item",
         {
           id: selectedItemId,
           item_name: itemName,
@@ -275,7 +275,7 @@ const Item: React.FC = () => {
   const handleDeleteItemClick = async () => {
     try {
       const response = await axios.delete(
-        "https://d2nxa7pir92htg.cloudfront.net/item/remove-item",
+        "https://dnznqi8n78t2t.cloudfront.net/item/remove-item",
         {
           params: {
             id: selectedItemId,

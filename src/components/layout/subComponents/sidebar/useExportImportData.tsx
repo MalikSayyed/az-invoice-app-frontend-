@@ -41,7 +41,7 @@ export function useExportImportData() {
 
   const fetchCompaniesReport = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/company/get-companies-export",
+      "https://dnznqi8n78t2t.cloudfront.net/company/get-companies-export",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -55,7 +55,7 @@ export function useExportImportData() {
 
   const fetchItemsReport = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/item/get-items-export",
+      "https://dnznqi8n78t2t.cloudfront.net/item/get-items-export",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -69,7 +69,7 @@ export function useExportImportData() {
 
   const fetchCustomersReport = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/customer/get-customers-export",
+      "https://dnznqi8n78t2t.cloudfront.net/customer/get-customers-export",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -83,7 +83,7 @@ export function useExportImportData() {
 
   const fetchInvoicesReport = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/invoice/get-invoices-export",
+      "https://dnznqi8n78t2t.cloudfront.net/invoice/get-invoices-export",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),

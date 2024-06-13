@@ -75,7 +75,7 @@ const Company: React.FC = () => {
 
   const fetchCompaniesData = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/company/get-companies",
+      "https://dnznqi8n78t2t.cloudfront.net/company/get-companies",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -205,7 +205,7 @@ const Company: React.FC = () => {
   const handleEditCompanyClick = async () => {
     try {
       await axios.put(
-        "https://d2nxa7pir92htg.cloudfront.net/company/update-company",
+        "https://dnznqi8n78t2t.cloudfront.net/company/update-company",
         {
           id: selectedCompanyId,
           name,
@@ -253,7 +253,7 @@ const Company: React.FC = () => {
   const handleDeleteCompanyClick = async () => {
     try {
       const response = await axios.delete(
-        "https://d2nxa7pir92htg.cloudfront.net/company/remove-company",
+        "https://dnznqi8n78t2t.cloudfront.net/company/remove-company",
         {
           params: {
             id: selectedCompanyId,

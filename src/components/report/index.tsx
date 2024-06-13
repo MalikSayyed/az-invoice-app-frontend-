@@ -52,7 +52,7 @@ const Report = () => {
 
   const fetchCompaniesData = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/company/get-companies",
+      "https://dnznqi8n78t2t.cloudfront.net/company/get-companies",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -66,7 +66,7 @@ const Report = () => {
 
   const fetchCustomersData = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/customer/get-all-customers",
+      "https://dnznqi8n78t2t.cloudfront.net/customer/get-all-customers",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -80,7 +80,7 @@ const Report = () => {
 
   const fetchItemsData = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/item/get-all-items",
+      "https://dnznqi8n78t2t.cloudfront.net/item/get-all-items",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),

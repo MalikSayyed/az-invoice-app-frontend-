@@ -51,7 +51,7 @@ const ProfileMenuList: React.FC<ProfileMenuListProps> = ({ handleClose }) => {
 
   const fetchUserData = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/auth/get-user",
+      "https://dnznqi8n78t2t.cloudfront.net/auth/get-user",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),

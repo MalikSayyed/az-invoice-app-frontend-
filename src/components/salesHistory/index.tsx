@@ -59,7 +59,7 @@ const SalesHistory: React.FC = () => {
 
   const fetchInvoiceByCompany = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/invoice/get-invoice-by-company",
+      "https://dnznqi8n78t2t.cloudfront.net/invoice/get-invoice-by-company",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -224,7 +224,7 @@ const SalesHistory: React.FC = () => {
   const handleDeleteInvoiceClick = async () => {
     try {
       await axios.delete(
-        "https://d2nxa7pir92htg.cloudfront.net/invoice/remove-invoice",
+        "https://dnznqi8n78t2t.cloudfront.net/invoice/remove-invoice",
         {
           params: {
             token,

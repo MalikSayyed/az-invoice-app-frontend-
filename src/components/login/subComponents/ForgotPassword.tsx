@@ -21,7 +21,7 @@ const ForgotPassword: React.FC<ForgotPasswordProps> = () => {
   const handleSendEmail = async () => {
     try {
       const response = await axios.post(
-        "https://d2nxa7pir92htg.cloudfront.net/auth/forgot-password",
+        "https://dnznqi8n78t2t.cloudfront.net/auth/forgot-password",
         {
           email,
         }

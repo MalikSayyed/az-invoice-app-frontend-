@@ -74,7 +74,7 @@ const Example = ({ dataFromTable }: TableProps) => {
 
   const fetchItemsData = async () => {
     const response = await axios.get(
-      "https://d2nxa7pir92htg.cloudfront.net/item/get-items",
+      "https://dnznqi8n78t2t.cloudfront.net/item/get-items",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),

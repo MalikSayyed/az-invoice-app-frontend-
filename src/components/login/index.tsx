@@ -64,7 +64,7 @@ const Login: React.FC<LoginProps> = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "https://d2nxa7pir92htg.cloudfront.net/auth/login",
+        "https://dnznqi8n78t2t.cloudfront.net/auth/login",
         {
           email,
           password,
