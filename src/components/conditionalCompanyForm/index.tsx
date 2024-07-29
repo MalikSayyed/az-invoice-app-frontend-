@@ -12,7 +12,7 @@ const ConditionalCompanyForm = () => {
         sessionStorage.getItem("loginToken")
       );
       const response = await axios.get(
-        "https://dnznqi8n78t2t.cloudfront.net/company/get-company-existing-flag",
+        "https://d3a7975fhwm13k.cloudfront.net/company/get-company-existing-flag",
         {
           params: {
             token: sessionStorage.getItem("loginToken"),

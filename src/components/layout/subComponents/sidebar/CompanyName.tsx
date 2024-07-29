@@ -38,7 +38,7 @@ const CompanyName = () => {
 
   const fetchCompaniesData = async () => {
     const response = await axios.get(
-      "https://dnznqi8n78t2t.cloudfront.net/company/get-companies",
+      "https://d3a7975fhwm13k.cloudfront.net/company/get-companies",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -52,7 +52,7 @@ const CompanyName = () => {
 
   const fetchSelectedCompany = async () => {
     const response = await axios.get(
-      "https://dnznqi8n78t2t.cloudfront.net/company/get-selected-company",
+      "https://d3a7975fhwm13k.cloudfront.net/company/get-selected-company",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -85,7 +85,7 @@ const CompanyName = () => {
   const handleAddCompanyClick = async () => {
     try {
       const response = await axios.post(
-        "https://dnznqi8n78t2t.cloudfront.net/company/create-company",
+        "https://d3a7975fhwm13k.cloudfront.net/company/create-company",
         {
           token: sessionStorage.getItem("loginToken"),
           name: companyName,
@@ -132,7 +132,7 @@ const CompanyName = () => {
     const token = sessionStorage.getItem("loginToken");
 
     const response = await axios.post(
-      "https://dnznqi8n78t2t.cloudfront.net/company/update-selected-company",
+      "https://d3a7975fhwm13k.cloudfront.net/company/update-selected-company",
       {
         token,
         company_name: event.target.value,

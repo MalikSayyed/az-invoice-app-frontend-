@@ -69,7 +69,7 @@ const Customer: React.FC = () => {
 
   const fetchCustomersData = async () => {
     const response = await axios.get(
-      "https://dnznqi8n78t2t.cloudfront.net/customer/get-customers",
+      "https://d3a7975fhwm13k.cloudfront.net/customer/get-customers",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -183,7 +183,7 @@ const Customer: React.FC = () => {
   const handleAddCustomerClick = async () => {
     try {
       const response = await axios.post(
-        "https://dnznqi8n78t2t.cloudfront.net/customer/add-customer",
+        "https://d3a7975fhwm13k.cloudfront.net/customer/add-customer",
         {
           token: sessionStorage.getItem("loginToken"),
           name: customerName,
@@ -229,7 +229,7 @@ const Customer: React.FC = () => {
   const handleEditCustomerClick = async () => {
     try {
       await axios.put(
-        "https://dnznqi8n78t2t.cloudfront.net/customer/update-customer",
+        "https://d3a7975fhwm13k.cloudfront.net/customer/update-customer",
         {
           id: selectedCustomerId,
           name: customerName,
@@ -279,7 +279,7 @@ const Customer: React.FC = () => {
   const handleDeleteCustomerClick = async () => {
     try {
       const response = await axios.delete(
-        "https://dnznqi8n78t2t.cloudfront.net/customer/remove-customer",
+        "https://d3a7975fhwm13k.cloudfront.net/customer/remove-customer",
         {
           params: {
             id: selectedCustomerId,

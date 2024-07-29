@@ -52,7 +52,7 @@ const PurchaseBill: React.FC = () => {
 
   const fetchInvoiceByCompany = async () => {
     const response = await axios.get(
-      "https://dnznqi8n78t2t.cloudfront.net/invoice/get-invoice-by-company",
+      "https://d3a7975fhwm13k.cloudfront.net/invoice/get-invoice-by-company",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -217,7 +217,7 @@ const PurchaseBill: React.FC = () => {
   const handleDeleteInvoiceClick = async () => {
     try {
       await axios.delete(
-        "https://dnznqi8n78t2t.cloudfront.net/invoice/remove-invoice",
+        "https://d3a7975fhwm13k.cloudfront.net/invoice/remove-invoice",
         {
           params: {
             token,

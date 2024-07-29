@@ -58,7 +58,7 @@ const TaxInvoice: React.FC<TaxInvoiceProps> = ({ invoice_number, flag }) => {
 
   const fetchInvoiceData = async () => {
     const response = await axios.get(
-      "https://dnznqi8n78t2t.cloudfront.net/invoice/get-invoice",
+      "https://d3a7975fhwm13k.cloudfront.net/invoice/get-invoice",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
