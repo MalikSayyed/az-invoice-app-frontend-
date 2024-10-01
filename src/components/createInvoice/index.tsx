@@ -43,7 +43,7 @@ const CreateInvoice = () => {
 
   const fetchCustomersData = async () => {
     const response = await axios.get(
-      "https://d3a7975fhwm13k.cloudfront.net/customer/get-customers",
+      "https://d2fn51spwb39qw.cloudfront.net/customer/get-customers",
       {
         params: {
           token: sessionStorage.getItem("loginToken"),
@@ -109,7 +109,7 @@ const CreateInvoice = () => {
       );
 
       await axios.post(
-        "https://d3a7975fhwm13k.cloudfront.net/invoice/create-invoice",
+        "https://d2fn51spwb39qw.cloudfront.net/invoice/create-invoice",
         {
           token: sessionStorage.getItem("loginToken"),
           inputs,
